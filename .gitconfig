@@ -1,0 +1,14 @@
+[alias]
+	st = status
+	ckd = checkout development
+	aa = add -A
+	cm = !git add -A && git commit -m
+	po = push -u origin master
+	ps = push
+	pl = pull
+	pw = config credential.helper store
+[user]
+	email = capretzvitor@gmail.com
+	name = Vitor Capretz
+[push]
+	default = simple
