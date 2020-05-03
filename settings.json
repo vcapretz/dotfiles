@@ -1,0 +1,24 @@
+{
+  "eslint.autoFixOnSave": true,
+  "editor.formatOnSave": true,
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "typescript.validate.enable": true,
+  "typescript.referencesCodeLens.enabled": false,
+  "javascript.referencesCodeLens.enabled": false,
+  "breadcrumbs.enabled": true,
+  "javascript.validate.enable": false,
+  "window.zoomLevel": 0,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.showTabs": true,
+  "workbench.colorTheme": "Night Owl",
+  "editor.fontSize": 13,
+  "editor.cursorStyle": "block",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+  "extensions.ignoreRecommendations": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}

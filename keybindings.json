@@ -1,43 +1,35 @@
 [
-    {
-        "key": "cmd+shift+d",
-        "command": "editor.action.copyLinesDownAction",
-        "when": "editorTextFocus"
-    }, {
-        "key": "cmd+down",
-        "command": "editor.action.moveLinesDownAction",
-        "when": "editorTextFocus"
-    }, {
-        "key": "cmd+up",
-        "command": "editor.action.moveLinesUpAction",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+;",
-        "command": "editor.action.addCommentLine",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+k cmd+c",
-        "command": "-editor.action.addCommentLine",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "cmd+;",
-        "command": "editor.action.blockComment",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "cmd+shift+a",
-        "command": "-editor.action.blockComment",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "cmd+;",
-        "command": "editor.action.commentLine"
-    },
-    {
-        "key": "cmd+shift+i",
-        "command": "editor.action.reindentlines"
-    }
+  {
+    "key": "cmd+shift+d",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+;",
+    "command": "editor.action.addCommentLine",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+k cmd+c",
+    "command": "-editor.action.addCommentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+;",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+shift+a",
+    "command": "-editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+;",
+    "command": "editor.action.commentLine"
+  },
+  {
+    "key": "cmd+shift+i",
+    "command": "editor.action.reindentlines"
+  }
 ]

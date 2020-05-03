@@ -1,16 +1,26 @@
 [alias]
         st = status
+	co = checkout
         ckd = checkout development
         aa = add -A
         cm = !git add -A && git commit -m
         po = push -u origin master
         ps = push
         pl = pull --rebase
-    		pw = config credential.helper store
-    		rac = !git add -A && git rebase --continue
-    		pushf = push --force-with-lease
+    	pw = config credential.helper store
+    	rac = !git add -A && git rebase --continue
+    	pushf = push --force-with-lease
 [user]
         email = capretzvitor@gmail.com
         name = Vitor Capretz
 [push]
         default = simple
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge --skip -- %f
+	process = git-lfs filter-process --skip
+	required = true
+[lfs]
+	locksverify = false
+        
