@@ -5,31 +5,64 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "cmd+;",
-    "command": "editor.action.addCommentLine",
-    "when": "editorTextFocus"
+    "key": "shift+cmd+]",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
   },
   {
-    "key": "cmd+k cmd+c",
-    "command": "-editor.action.addCommentLine",
-    "when": "editorTextFocus && !editorReadonly"
+    "key": "shift+cmd+[",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
   },
   {
-    "key": "cmd+;",
-    "command": "editor.action.blockComment",
-    "when": "editorTextFocus && !editorReadonly"
+    "key": "ctrl+left",
+    "command": "cursorWordPartLeft",
+    "when": "textInputFocus"
   },
   {
-    "key": "cmd+shift+a",
-    "command": "-editor.action.blockComment",
-    "when": "editorTextFocus && !editorReadonly"
+    "key": "ctrl+alt+left",
+    "command": "-cursorWordPartLeft",
+    "when": "textInputFocus"
   },
   {
-    "key": "cmd+;",
-    "command": "editor.action.commentLine"
+    "key": "ctrl+shift+left",
+    "command": "cursorWordPartLeftSelect",
+    "when": "textInputFocus"
   },
   {
-    "key": "cmd+shift+i",
-    "command": "editor.action.reindentlines"
+    "key": "ctrl+right",
+    "command": "cursorWordPartRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+alt+right",
+    "command": "-cursorWordPartRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+right",
+    "command": "cursorWordPartRightSelect",
+    "when": "textInputFocus"
+  },
+  // FILE TREE
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "workbench.action.newWindow",
+    "when": "!explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+shift+d",
+    "command": "deleteFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
   }
 ]

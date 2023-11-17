@@ -1,24 +1,90 @@
 {
-  "typescript.disableAutomaticTypeAcquisition": true,
-  "typescript.validate.enable": true,
-  "typescript.referencesCodeLens.enabled": false,
-  "javascript.referencesCodeLens.enabled": false,
-  "breadcrumbs.enabled": true,
-  "javascript.validate.enable": false,
-  "window.zoomLevel": 0,
-  "javascript.updateImportsOnFileMove.enabled": "never",
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.editor.showTabs": true,
-  "workbench.colorTheme": "Night Owl",
-  "editor.fontSize": 13,
-  "editor.cursorStyle": "block",
-  "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
-  "extensions.ignoreRecommendations": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "terminal.integrated.shell.osx": "/bin/zsh",
-  "editor.formatOnSave": true
+
+  "editor.lineNumbers": "relative",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.cursorStyle": "block",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "git.enableStatusBarSync": false,
+  "git.mergeEditor": false,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": false,
+    "markdown": false
+  },
+  "[prisma]": { "editor.defaultFormatter": "Prisma.prisma" },
+  "editor.inlayHints.enabled": "off",
+  "editor.inlineSuggest.enabled": true,
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Rosé Pine (no italics)",
+
+  "vim.leader": "<Space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // NAVIGATION
+    // switch b/w buffers
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+
+    // splits
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
+
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+
+    // FILE TREE
+    {
+      "before": ["leader", "n", "e"],
+      "commands": ["workbench.explorer.fileView.focus"]
+    },
+
+    // NICE TO HAVE
+    { "before": ["leader", "w"], "commands": ["workbench.action.files.save"] },
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // toggle comment selection
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+  ],
+  "extensions.ignoreRecommendations": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "editor.accessibilitySupport": "off"
 }
